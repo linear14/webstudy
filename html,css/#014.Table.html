@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table Practice</title>
+        <style>
+            table, th, td {
+                border: 1px solid salmon;
+                border-collapse: collapse;
+            }
+
+            th, td {
+                padding: 15px;
+                text-align: left;
+                color: black
+            }
+
+            th {
+                background-color: lightpink;
+            }
+
+            tr:nth-child(even) {
+                background-color: #eee
+            }
+
+            tr:nth-child(odd) {
+                background-color: #fff;
+            }
+
+            #t01 {
+                background-color: blueviolet
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <table style="width: 100%">
+            <caption style="padding: 12px; font-size: 24px">My Relations</caption>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Addreess</th>
+                <th>Job</th>
+            </tr>
+            <tr>
+                <td>Dong Hyun</td>
+                <td>26</td>
+                <td>Suwon</td>
+                <td>Student</td>
+            </tr>
+            <tr>
+                <td>Ji Min</td>
+                <td>24</td>
+                <td>Seoul</td>
+                <td>Designer</td>
+            </tr>
+            <tr>
+                <td id="t01">Ju Ho</td>
+                <td>31</td>
+                <td>Daegu</td>
+                <td>Baker</td>
+            </tr>
+            <tr>
+                <td>Alex</td>
+                <td>22</td>
+                <td colspan="2">-</td>
+            </tr>
+        </table>
+
+
+    </body>
+</html>
