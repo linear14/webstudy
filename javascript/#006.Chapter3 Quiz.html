@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>퀴즈 1, 2</title>
+</head>
+<body>	
+	<div id="text" style="font-size: 24px; text-align: center;"></div>
+	<script>
+		var text = prompt("내용 입력: ");
+		var width = prompt("사각형의 가로 값");
+		var height = prompt("사각형의 세로 값");
+		
+		document.querySelector("#text").innerHTML = `${text}`
+		alert(`주어진 사각형의 너비: ${width * height}`)
+	</script>
+</body>
+</html>
