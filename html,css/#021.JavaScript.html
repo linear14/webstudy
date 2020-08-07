@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Practice</title>
+       
+    </head>
+    <body>
+        <h1>My First JavaScript</h1>
+        <button type="button" onclick="showDateAndTime()">Click me to display Data and Time.</button>
+        <button type="button" onclick="changeStyle()">Change Style</button>
+        <p id="demo"></p>
+
+        <script>
+            function showDateAndTime() {
+                document.getElementById("demo").innerHTML = Date() 
+            }
+
+            function changeStyle() {
+                document.getElementById('demo').style.color = "red";
+                document.getElementById('demo').style.fontSize = "25px";
+            }
+        </script>
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    </body>
+</html>
