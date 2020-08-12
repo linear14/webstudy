@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Basic Practice</title>
+
+
+</head>
+
+<body>
+    <ul>
+        <li>form 태그 자체로는 뷰가 보이지 않는다. 내부의 요소가 존재해야함</li>
+        <li>text input field는 default로 20characters을 담을 수 있는 width를 가진다.</li>
+        <li>label을 누르면 해당하는 input쪽으로 커서가 자동 이동 (혹은 클릭)</li>
+        <li>label 태그의 for 속성값은 input 태그의 id 값과 같아야 한다.</li>
+        <li>name 태그는 꼭 들어가야한다. name 태그가 생략된 값들은 서버로 전송되지 않기 때문이다.</li>
+    </ul><br><br>
+
+    <h2>Text input fields</h2>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Dong Hyun"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Lee"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br><br><br>
+
+    <h2>Radio Buttons</h2>
+    <form>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br>
+    </form>
+    <br><br><br>
+
+    <h2>CheckBoxes</h2>
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1">I have a Bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2">I have a Car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3">I have a Boat</label><br>
+    </form>
+</body>
+
+</html>
