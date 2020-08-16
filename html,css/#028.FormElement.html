@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Element Practice</title>
+
+
+</head>
+
+<body>
+    <h2>Select</h2>
+    <form action="#">
+        <label for="cars">Choose a car: </label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="ssab" selected>Ssab</option>
+            <option value="fiat">Fiat</option>
+        </select>
+    </form>
+    <br><br>
+
+    <h2>Textarea</h2>
+    <form action="#">
+        <textarea name="message" rows="10" cols="30">
+            The cat was playing in the garden.
+        </textarea>
+    </form>
+    <br><br>
+
+    <h2>Button</h2>
+    <form>
+        <button type="button" onclick="alert('Hello World')">Click Me!!</button>
+    </form>
+    <br><br>
+
+    <h2>Fieldset and Legend</h2>
+    <form>
+        <fieldset>
+            <legend>Personalia: </legend>
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" name="fname" value="Dong Hyun"><br>
+            <label for="lname">Last Name: </label>
+            <input type="text" id="lname" name="lname" value="Lee"><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <br><br>
+
+    <h2>Datalist</h2>
+    <form>
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer"></option>
+            <option value="Chrome"></option>
+            <option value="Safari"></option>
+            <option value="Opera"></option>
+        </datalist>
+    </form>
+</body>
+
+</html>
