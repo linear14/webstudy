@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>css margin padding practice</title>
+
+  <style>
+    .margin70 { border: 2px solid green; margin: 70px }
+    .marginShorthand { border: 3px solid red; margin: 25px 50px 75px 100px }
+    .marginAuto {
+      border: 3px solid black;
+      margin: auto;
+      width: 400px;
+    }
+
+    .parent { border: 2px dotted red; margin-top: 30px;}
+    .ex1 { margin: inherit;}
+
+    .padding70 { border: 3px solid green; padding: 70px }
+    
+    .width300 { width: 300px; border: 5px solid blue }
+    .padding_no_box_sizing { padding: 50px }
+    .padding_box_sizing { padding: 50px; box-sizing: border-box }
+    /* box-sizing: border-box --> padding의 값을 전체 width에 포함 --> element의 width는 설정한 width와 같게됨 */
+  </style>
+
+
+</head>
+
+<body>
+    <div class="margin70">This element has a margin 70px.</div>
+    <div class="marginShorthand">This element has different margins.</div>
+    <div class="marginAuto">This div will be horizontally centered.</div>
+
+    <div class="parent">
+      <p class="ex1">This element has an inherited margin</p>
+    </div>
+
+    <div class="padding70">This element has a padding 70px.</div>
+
+    <div class="padding_no_box_sizing width300">Total width will be 400px</div>
+    <div class="padding_box_sizing width300">Total width will be 300px</div>
+</body>
+
+</html>
