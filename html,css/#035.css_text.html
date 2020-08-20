@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>css text practice</title>
+
+  <style>
+     body {
+       background-color: lightgray;
+       color: red
+     }
+
+     h1 {
+       background-color: black;
+       color: white
+     }
+
+     .ori {
+       color: black
+     }
+
+     #indent {
+       text-indent: 100px;
+     }
+
+     #ls {
+       letter-spacing: 5px;
+     }
+
+     #ws {
+       word-spacing: 50px;
+     }
+
+     #whitespace {
+       white-space: nowrap;
+     }
+
+     /* 순서대로 horizontal, vertical, blur, color */
+     #ts {
+       text-shadow: 2px 2px 5px red;
+     }
+  </style>
+
+</head>
+
+<body>
+    <h1>Heading</h1>
+    <p>Paragraph</p>
+
+    <p class="ori" id="indent">Text Indent</p>
+    <p class="ori" id="ls">Text Letter Spacing</p>
+    <p class="ori" id="ws">Text Word Spacing</p>
+    <p class="ori" id="whitespace">Text White Space Text White Space Text White Space Text White Space Text White Space Text White Space Text White Space Text White Space Text White Space Text White Space</p>
+    <br>
+    <p class="ori" id="ts">Text Shadow(Blur)</p>
+</body>
+
+</html>
